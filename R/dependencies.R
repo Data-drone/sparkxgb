@@ -1,5 +1,6 @@
 spark_dependencies <- function(spark_version, scala_version, ...) {
-  #if (spark_version > "2.3") spark_version <- "2.3"
+  #if (spark_version > "2.4") 
+  spark_version <- "3.0"
     
   sparklyr::spark_dependency(
     jars = c(
