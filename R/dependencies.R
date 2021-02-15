@@ -1,5 +1,5 @@
 spark_dependencies <- function(spark_version, scala_version, ...) {
-  if (spark_version > "2.3") spark_version <- "2.3"
+  #if (spark_version > "2.3") spark_version <- "2.3"
     
   sparklyr::spark_dependency(
     jars = c(
@@ -8,7 +8,7 @@ spark_dependencies <- function(spark_version, scala_version, ...) {
         package = "sparkxgb"
       )
     ),
-    packages = "ml.dmlc:xgboost4j-spark:0.81"
+    packages = "ml.dmlc:xgboost4j-spark:1.3.1"
   )
 }
 
