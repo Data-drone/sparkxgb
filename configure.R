@@ -8,6 +8,6 @@ spec <- sparklyr::spark_default_compilation_spec() %>%
       map_chr(normalizePath)
     x
   }) %>%
-  keep(~ .x$spark_version >= "2.3.0")
+  keep(~ .x$spark_version >= "2.4.0")
 
 sparklyr::compile_package_jars(spec = spec)
